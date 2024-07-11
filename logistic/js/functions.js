@@ -1259,35 +1259,20 @@ jQuery($=> {
 
 
 $(document).ready(function() {
-    const headings = [
-        {heading: "Transforming Industry", subheading: "With", secondaryHeading: "Innovation and Excellence"},
-        {heading: "Leading with Technology", subheading: "Driven by", secondaryHeading: "Expertise and Vision"},
-        {heading: "Pioneering Solutions", subheading: "Inspired by", secondaryHeading: "Creativity and Dedication"}
-    ];
+    const textElement = document.getElementById('changing-text');
+const textArray = [
+    "Transforming Industry",
+    "With Innovation and Excellence",
+    "Your Partner in Success"
+];
+let textIndex = 0;
 
-    let index = 0;
+function changeText() {
+    textElement.textContent = textArray[textIndex];
+    textIndex = (textIndex + 1) % textArray.length;
+}
 
-    function changeText() {
-        const slideHeading = $('.slide-heading');
-        const slideSubheading = $('.slide-subheading');
-        const slideSecondaryHeading = $('.slide-secondary-heading');
+setInterval(changeText, 10000); // Change text every 10 seconds
 
-        slideHeading.fadeOut(function() {
-            $(this).text(headings[index].heading).fadeIn().addClass('active');
-        });
-
-        slideSubheading.fadeOut(function() {
-            $(this).text(headings[index].subheading).fadeIn().addClass('active');
-        });
-
-        slideSecondaryHeading.fadeOut(function() {
-            $(this).text(headings[index].secondaryHeading).fadeIn().addClass('active');
-        });
-
-        index = (index + 1) % headings.length;
-    }
-
-    setInterval(changeText, 8000); // Change text every 4 seconds
-
-    changeText(); // Initial call to set the first text
+window.onload = changeText; // Initialize the first text
 });

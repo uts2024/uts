@@ -447,7 +447,7 @@ p {
     background: #ffb902;
 }
 .bgprimary {
-    background: #026cb8;
+    background:#40403e;
 }
 
 .bgdark {
@@ -1422,7 +1422,7 @@ ul.links li a::before,
 
 .navbar-nav .nav-link {
     padding: 8px 0 !important;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: capitalize;
     font-size: 14px;
     color: #26313c;
@@ -1927,7 +1927,7 @@ a.dropdown-toggle::after {
     padding: 5px 0 !important;
     margin: 0;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .side-nav .navbar-nav .nav-link::before,
@@ -2030,7 +2030,7 @@ a.dropdown-toggle::after {
 
 @media (max-width: 992px) {
     .transparent-bg:not(.fixedmenu) {
-        background: var(--blue-navbar);
+        /* background: var(--blue-navbar); */
         padding: 0;
     }
     .navbar-brand{
@@ -2360,7 +2360,8 @@ a.dropdown-toggle::after {
 }
 
 .service-header {
-    background: url(../images/bg-service-header.jpg) no-repeat;
+    background: url(../images/servieces-upstreamtechnicalservices.jpg) no-repeat;
+    background-position: center !important;
 }
 
 .service-detail-header {
@@ -2368,7 +2369,8 @@ a.dropdown-toggle::after {
 }
 
 .contact-header {
-    background: url(../images/bg-contact-header.jpg) no-repeat;
+    background: url(../images/contact-upstreamtechnicalservices.jpg) no-repeat;
+    background-position: center !important;
 }
 
 .gallery-header {
@@ -3388,24 +3390,20 @@ iframe {
 
 .testimonial-wrapp .quoted,
 .testimonial-wrapp .testimonial-photo {
-    display: inline-block;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+    display: block;
+    /* -webkit-border-radius: 50%;
+    border-radius: 50%; */
 }
 
 .testimonial-wrapp .quoted {
     -webkit-background-size: 100% 100%;
     background-size: 200% 100%;
-    background-image: -webkit-gradient(linear, left top, right top, from(#ffab02), color-stop(51%, #ffda00), to(#ffab02));
-    background-image: -webkit-linear-gradient(left, #ffab02 0%, #ffda00 51%, #ffab02 100%);
-    background-image: -moz-linear-gradient(left, #ffab02 0%, #ffda00 51%, #ffab02 100%);
-    background-image: -o-linear-gradient(left, #ffab02 0%, #ffda00 51%, #ffab02 100%);
-    background-image: linear-gradient(to right, #ffab02 0%, #ffda00 51%, #ffab02 100%);
+    background-color: var(--grey);
     color: #fff;
     font-size: 20px;
     line-height: 50px;
-    height: 50px;
-    width: 50px;
+    /* height: 50px;
+    width: 50px; */
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(50%);
     -o-transform: translateY(50%);
@@ -3417,7 +3415,7 @@ iframe {
     padding: 4.25rem 2.5rem;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #0000001b;
     overflow: hidden;
     text-align: justify;
     transition: color 0.3s ease-in 0.1s;
@@ -3508,8 +3506,8 @@ h4.darkcolor {
 #testimonial-main-slider .owl-dot,
 #price-slider .owl-dot,
 #ourteam-main-slider .owl-dot {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: transparent;
     transition: 0.4s all;
@@ -5215,8 +5213,8 @@ ul.count_down.white li p:nth-child(2) {
 }
 
 .pricing-item .pricing-currency {
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .pricing-list {
@@ -5242,12 +5240,12 @@ ul.count_down.white li p:nth-child(2) {
 }
 
 .pricing-item.active {
-    background: #026cb8;
+    background: #40403e;
 }
 
 .pricing-item.active .button {
     border-color: #fff;
-    background: #026cb8;
+    background:var(--blue-navbar);
     transition: 0.2s all;
 }
 
@@ -5278,7 +5276,7 @@ ul.count_down.white li p:nth-child(2) {
 
 /*price sale*/
 
-.pricing-item.sale::before,
+/* .pricing-item.sale::before,
 .shopping-box .sale::before {
     content: '\f02e';
     font-family: "Font Awesome 5 Free", serif;
@@ -5289,7 +5287,7 @@ ul.count_down.white li p:nth-child(2) {
     font-size: 60px;
     color: #ffb902;
     z-index: 1;
-}
+} */
 
 .pricing-item.gray.sale::before {
     color: #4A5158;
@@ -5299,7 +5297,7 @@ ul.count_down.white li p:nth-child(2) {
     z-index: 100;
 }
 
-.pricing-item.sale::after,
+/* .pricing-item.sale::after,
 .shopping-box .sale::after {
     content: "- " attr(data-sale) "%";
     position: absolute;
@@ -5308,18 +5306,18 @@ ul.count_down.white li p:nth-child(2) {
     font-size: 14px;
     color: #fff;
     z-index: 2;
-}
+} */
 
 .shopping-box .sale::after {
     z-index: 101;
 }
 
-.pricing-item.sale:hover::after,
+/* .pricing-item.sale:hover::after,
 .shopping-box .sale:hover::after {
     content: 'Sale';
     right: 23px;
     color: #026cb8;
-}
+} */
 .pricing-item.sale:hover::before,
 .shopping-box .sale:hover::before {
     color: #fff;
@@ -5421,9 +5419,9 @@ ul.count_down.white li p:nth-child(2) {
 }
 
 @media (max-width:992px) {
-    .pricing-item .pricing-currency {
+    /* .pricing-item .pricing-currency {
         font-size: 2.5rem;
-    }
+    } */
     .pricing-list li {
         font-size: 0.9375rem;
     }
@@ -5875,7 +5873,8 @@ ul.latest_news li a:focus+span.defaultcolor {
 
 :root{
     --blue-navbar:#0633885e;
-    --yellow: hsl(43, 100%, 50%)
+    --yellow: hsl(43, 100%, 50%);
+    --grey:#40403e;
 }
 
 .image img{
@@ -5929,4 +5928,51 @@ ul.latest_news li a:focus+span.defaultcolor {
 /* About page */
 .about-text-upstream,.about-text-upstream div{
     padding: 20px;
+}
+p.heading{
+    padding: 20px;
+}
+#reviews{
+    padding: 19rem 0px 0 0;
+}
+
+/* Home */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#changing-text{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffc0cb00;
+    /* border: pink; */
+    /* border: 1px solid #cccccc; */
+    text-stroke: 1px black;
+    -webkit-text-stroke: 1px white;
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+
+/* Seervices page */
+.img-responsive{
+    border-radius: 0 !important;
+
 }
