@@ -1257,9 +1257,25 @@ jQuery($=> {
 
 
 $(document).ready(function(){
+    // Home redirection
     $('.home-link').click(function(event){
         event.preventDefault(); // Prevent the default action
         window.location.href = '/'; // Redirect to another page of your website
+    });
+    // About page redirection
+    $('.about-link').click(function(event){
+        event.preventDefault(); // Prevent the default action
+        window.location.href = '/about'; // Redirect to another page of your website
+    });
+    // services redirection
+    $('.service-link').click(function(event){
+        event.preventDefault(); // Prevent the default action
+        window.location.href = '/services'; // Redirect to another page of your website
+    });
+    // contact redirection
+    $('.contact-link').click(function(event){
+        event.preventDefault(); // Prevent the default action
+        window.location.href = '/contact'; // Redirect to another page of your website
     });
 });
   
