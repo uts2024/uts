@@ -1259,7 +1259,7 @@ jQuery($=> {
 $(document).ready(function(){
     $('.home-link').click(function(event){
         event.preventDefault(); // Prevent the default action
-        window.location.href = 'index.html'; // Redirect to another page of your website
+        window.location.href = '/'; // Redirect to another page of your website
     });
 });
   
