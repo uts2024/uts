@@ -5873,7 +5873,7 @@ ul.latest_news li a:focus+span.defaultcolor {
 
 :root{
     --blue-navbar:#0633885e;
-    --yellow: hsl(43, 100%, 50%);
+    --black:#000;
     --grey:#40403e;
 }
 

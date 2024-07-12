@@ -1284,9 +1284,9 @@ $(document).ready(function(){
 $(document).ready(function() {
     const textElement = document.getElementById('changing-text');
 const textArray = [
-    "Transforming Industry",
-    "With Innovation and Excellence",
-    "Your Partner in Success"
+    "Where Technology Meets Reliability",
+    "Innovative Solutions for a Better Tomorrow",
+    "Your Partner in Industrial Evolution"
 ];
 let textIndex = 0;
 
@@ -1295,7 +1295,7 @@ function changeText() {
     textIndex = (textIndex + 1) % textArray.length;
 }
 
-setInterval(changeText, 10000); // Change text every 10 seconds
+setInterval(changeText, 7000); // Change text every 10 seconds
 
 window.onload = changeText; // Initialize the first text
 });
