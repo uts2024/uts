@@ -449,7 +449,8 @@ p {
 }
 .bgprimary {
     /* background:#40403e; */
-    background: #000;
+    /* background: #000; */
+    background: var(--blue);
 }
 
 .bgdark {
