@@ -1295,7 +1295,7 @@ function changeText() {
     textIndex = (textIndex + 1) % textArray.length;
 }
 
-setInterval(changeText, 7000); // Change text every 10 seconds
+setInterval(changeText, 4000); // Change text every 10 seconds
 
 window.onload = changeText; // Initialize the first text
 });
