@@ -444,7 +444,8 @@ p {
 }
 
 .bgdefault {
-    background: #ffb902;
+    /* background: #ffb902; */
+    background-color: #40403e;
 }
 .bgprimary {
     background:#40403e;
@@ -459,17 +460,21 @@ p {
 }
 
 .darkcolor{
-    color: #05338a;
+   /* color: #000; */
+   color: var(--grey);
 }
 .bg-dark {
     background: #26313C !important;
 }
 
 .defaultcolor {
-    color: #ffad01;
+    /* color: #ffad01; */
+    /* color:#40403e; */
+    color: var(--blue);
 }
 .bg-yellow {
-    background: #ffb902;
+    /* background: #ffb902; */
+    background: #000;
 }
 
 .bluecolor {
@@ -488,7 +493,8 @@ p {
 
 .hover-default:hover,
 .hover-default:focus {
-    color: #ffb902;
+    /* color: #ffb902; */
+    background: #000;
 }
 
 /*heading Titles */
@@ -1032,12 +1038,15 @@ ul.social-icons.white li a:focus {
 .gradient-btn {
     -webkit-background-size: 200% auto;
     background-size: 200% auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(#ffab02), color-stop(51%, #ffda00), to(#ffab02));
+    /* background-image: -webkit-gradient(linear, left top, right top, from(#ffab02), color-stop(51%, #ffda00), to(#ffab02));
     background-image: -webkit-linear-gradient(left, #ffab02 0%, #ffda00 51%, #ffab02 100%);
     background-image: -moz-linear-gradient(left, #ffab02 0%, #ffda00 51%, #ffab02 100%);
     background-image: -o-linear-gradient(left, #ffab02 0%, #ffda00 51%, #ffab02 100%);
-    background-image: linear-gradient(to right, #ffab02 0%, #ffda00 51%, #ffab02 100%);
+    background-image: linear-gradient(to right, #ffab02 0%, #ffda00 51%, #ffab02 100%); */
+    background: linear-gradient(to right,var(--grey),var(--black));
     color: #fff;
+    border-radius:20px ;
+    padding: 20px;
 }
 
 .gradient-btn:hover {
@@ -2855,7 +2864,8 @@ iframe {
     z-index: 1;
     font-size: 38px;
     margin-bottom: 20px;
-    color: #ffb902;
+    /* color: #ffb902; */
+    color: var(--blue);
     vertical-align: top;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -2875,7 +2885,8 @@ iframe {
 }
 
 .feature-item:hover .text span {
-    color: #ffb902;
+    /* color: #ffb902; */
+    color: var(--blue);
 }
 
 .feature-item:hover .icon {
@@ -5331,7 +5342,8 @@ ul.count_down.white li p:nth-child(2) {
     position: absolute;
     top: 2px;
     left: -25px;
-    color: #ffb902;
+    /* color: #ffb902; */
+    color: var(--black);
 }
 .price-included::before{
     color: #026cb8;
@@ -5872,6 +5884,7 @@ ul.latest_news li a:focus+span.defaultcolor {
 }
 
 :root{
+    --blue: #05338a;
     --blue-navbar:#0633885e;
     --black:#000;
     --grey:#40403e;
@@ -5879,10 +5892,6 @@ ul.latest_news li a:focus+span.defaultcolor {
 
 .image img{
     border-radius:20px ;
-}
-
-:root{
-    --blue:#026cb8;
 }
 
 /* Home carousel */
