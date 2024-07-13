@@ -2374,6 +2374,8 @@ a.dropdown-toggle::after {
 .service-header {
     background: url(../images/servieces-upstreamtechnicalservices.jpg) no-repeat;
     background-position: center !important;
+    background-size:cover ;
+
 }
 
 .service-detail-header {
@@ -2383,6 +2385,7 @@ a.dropdown-toggle::after {
 .contact-header {
     background: url(../images/contact-upstreamtechnicalservices.jpg) no-repeat;
     background-position: center !important;
+    background-size:cover ;
 }
 
 .gallery-header {
