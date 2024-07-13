@@ -1250,6 +1250,7 @@ jQuery($=> {
             disableFocusListener: false
         }
     });
+    
    
 //    end of js
 
@@ -1298,4 +1299,13 @@ function changeText() {
 setInterval(changeText, 4000); // Change text every 10 seconds
 
 window.onload = changeText; // Initialize the first text
+});
+  
+
+$(window).on("load", function() {
+    setTimeout(function() {
+        $('.loader').fadeOut('slow', function() {
+            $('.main-content').fadeIn('slow');
+        });
+    }, 7000); // Delay in milliseconds before the loader disappears
 });
