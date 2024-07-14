@@ -1292,13 +1292,24 @@ const textArray = [
 let textIndex = 0;
 
 function changeText() {
-    textElement.textContent = textArray[textIndex];
-    textIndex = (textIndex + 1) % textArray.length;
+    if (textElement) {
+        textElement.textContent = textArray[textIndex];
+        textIndex = (textIndex + 1) % textArray.length;
+    }
+    // textElement.textContent = textArray[textIndex];
+    // textIndex = (textIndex + 1) % textArray.length;
 }
 
 setInterval(changeText, 4000); // Change text every 10 seconds
 
 window.onload = changeText; // Initialize the first text
+
+
+
+
+
+// email
+
 });
   
 
@@ -1309,3 +1320,34 @@ $(window).on("load", function() {
         });
     }, 7000); // Delay in milliseconds before the loader disappears
 });
+
+// // Email submission
+// function emailSend(){
+
+// 	var name = document.getElementById('name').value;
+// 	var subject = document.getElementById('subject').value;
+// 	var email = document.getElementById('email').value;
+//     var message = document.getElementById('message').value;
+//     console.log('inside function');
+// 	email.send({
+//     Host : "smtp.elasticemail.com",
+//     Username : "gayathrimukundan02@gmail.com",
+//     Password : "D0DED3E64D765444B433AEE82245D82D83AC",
+//     To : 'evergardenv608@gmail.com',
+//     Name:name,
+//     From :email,
+//     Subject : subject,
+//     Body : message
+// }).then(
+//     response => {
+//         if (response === 'OK') {
+//             console.log('good response');
+//             alert("Success", "Your message has been sent!", "success");
+//             response.preventDefault()
+//         } else {
+//             alert("Error", "OOPS! Something went wrong", "error");
+//             console.log('bad response');
+//         }
+//     }
+// );
+// }

@@ -6084,3 +6084,8 @@ p.heading{
         opacity: 0;
     }
 }
+/* @media(max-width:995px){
+    .image-about{
+        display: none;
+    }
+} */
