@@ -1278,6 +1278,16 @@ $(document).ready(function(){
         event.preventDefault(); // Prevent the default action
         window.location.href = '/contact'; // Redirect to another page of your website
     });
+    // team page
+    $('.team-link').click(function(event){
+        event.preventDefault(); // Prevent the default action
+        window.location.href = '/team'; // Redirect to another page of your website
+    });
+    // testimony page
+    $('.testmonial-link').click(function(event){
+        event.preventDefault(); // Prevent the default action
+        window.location.href = '/testimonial'; // Redirect to another page of your website
+    });
 });
   
 
