@@ -485,7 +485,9 @@ p {
 .bg-blue {
     background: #026cb8;
 }
-
+.bgyellow{
+    color: yellow;
+}
 
 
 .container-padding {
@@ -2409,7 +2411,7 @@ a.dropdown-toggle::after {
 }
 
 .team-header {
-    background: url(../images/bg-team-header.jpg) no-repeat;
+    background: url(../images/teambanner-upstreamtechnicalservices.jpg) no-repeat;
 }
 
 .pricing-header {
@@ -2810,14 +2812,18 @@ iframe {
 /*App Features*/
 #our-apps{
 
-    height: 90vh !important;
-    background-color: pink;
+    /* height: 90vh !important; */
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     width: 90%;
     margin: auto;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 1 2px 2px 0 rgba(0, 0, 0, 1);
+    box-shadow: 7px 6px 4px 1px rgba(0, 0, 0, 0.6);
+    background-image: url('https://images.pexels.com/photos/411195/pexels-photo-411195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0.9);
 }
 
 #app-feature .feature-item:hover,
@@ -2827,6 +2833,8 @@ iframe {
 
 .feature-item {
     text-align: center;
+    color: white;
+    font-weight: 500 !important;
 }
 .feature-item:hover{
     transform: scale(1.2) ;
@@ -2906,7 +2914,7 @@ iframe {
 
 .feature-item:hover .text span {
     /* color: #ffb902; */
-    color: var(--blue);
+    color: white;
 }
 
 .feature-item:hover .icon {
@@ -6103,3 +6111,11 @@ p.heading{
         display: none;
     }
 } */
+
+#our-testimonial{
+    background-image: url('https://images.pexels.com/photos/4963436/pexels-photo-4963436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    /* filter: grayscale(5); */
+}
