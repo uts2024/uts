@@ -2837,7 +2837,7 @@ iframe {
     font-weight: 500 !important;
 }
 .feature-item:hover{
-    transform: scale(1.2) ;
+    /* transform: scale(1.2) ; */
     transition: 300ms ease-in;
 }
 
