@@ -1364,7 +1364,7 @@ $(window).on("load", function() {
 document.addEventListener('DOMContentLoaded', function () {
     let items = document.querySelectorAll('.pricing-item');
     let currentIndex = 0;
-    let intervalTime = 3000; // Change interval time as needed
+    let intervalTime = 1600; // Change interval time as needed
 
     function activateNextItem() {
         items[currentIndex].classList.remove('active');
