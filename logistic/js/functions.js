@@ -1285,9 +1285,7 @@ $(document).ready(function(){
 $(document).ready(function() {
     const textElement = document.getElementById('changing-text');
 const textArray = [
-    "Where Technology Meets Reliability",
-    "Innovative Solutions for a Better Tomorrow",
-    "Your Partner in Industrial Evolution"
+    "Experts in Oil and Gas Solutions",  "Partner in UAE’s Energy and Power Industries",  "Where Technology Meets Reliability"
 ];
 let textIndex = 0;
 
@@ -1351,3 +1349,31 @@ $(window).on("load", function() {
 //     }
 // );
 // }
+
+// specialize in loop
+document.addEventListener('DOMContentLoaded', function () {
+    let items = document.querySelectorAll('.pricing-item');
+    let currentIndex = 0;
+    let intervalTime = 3000; // Change interval time as needed
+
+    function activateNextItem() {
+        items[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % items.length;
+        items[currentIndex].classList.add('active');
+    }
+
+    let interval = setInterval(activateNextItem, intervalTime);
+
+    items.forEach((item, index) => {
+        item.addEventListener('mouseenter', function () {
+            clearInterval(interval);
+            items[currentIndex].classList.remove('active');
+            currentIndex = index;
+            items[currentIndex].classList.add('active');
+        });
+
+        item.addEventListener('mouseleave', function () {
+            interval = setInterval(activateNextItem, intervalTime);
+        });
+    });
+});

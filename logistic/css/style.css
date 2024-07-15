@@ -2808,6 +2808,17 @@ iframe {
 
 
 /*App Features*/
+#our-apps{
+
+    height: 90vh !important;
+    background-color: pink;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1 2px 2px 0 rgba(0, 0, 0, 1);
+}
 
 #app-feature .feature-item:hover,
 .feature-item.image {
@@ -5264,11 +5275,14 @@ ul.count_down.white li p:nth-child(2) {
 
 .pricing-item.active {
     background: #40403e;
+    /* transform: scale(1.1); */
+    transition: 0.2s all;
 }
 
 .pricing-item.active .button {
     border-color: #fff;
     background:var(--blue-navbar);
+    transform: scale(1.2);
     transition: 0.2s all;
 }
 
