@@ -6017,6 +6017,7 @@ p.heading{
 /* Seervices page */
 .img-responsive{
     border-radius: 0 !important;
+    height: 230px !important;
 
 }
 
