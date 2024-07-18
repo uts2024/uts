@@ -5240,6 +5240,7 @@ ul.count_down.white li p:nth-child(2) {
     -webkit-border-radius: 0;
     text-align: center;
     overflow: hidden;
+    
     background: #fff;
 }
 
