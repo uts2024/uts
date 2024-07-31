@@ -1408,12 +1408,23 @@ ul.links li a::before,
 .navbar .logo-scrolled {
     display: none;
 }
-
+.scrolled .logo-default,
+.scrolled .inline-logo {
+    display: none;
+}
 .navbar.fixedmenu .logo-scrolled,
 .navbar .logo-default {
     display: inline-block;
 }
 
+
+.title-link{
+    font-weight: 700;
+    text-transform: capitalize !important;
+}
+.inline-block{
+    margin-left: -14px ;
+}
 .navbar-nav .nav-item {
     position: relative;
 }
@@ -1437,7 +1448,7 @@ ul.links li a::before,
     padding: 8px 0 !important;
     font-weight: 700;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 16px;
     color: #26313c;
     position: relative;
     line-height: normal;
@@ -1702,6 +1713,11 @@ a.dropdown-toggle::after {
 
 
 /*side open btn*/
+@media(min-width:998px){
+    .sidemenu_btn{
+        display: none !important;
+    }
+}
 
 .sidemenu_btn {
     -webkit-transition: all .3s linear;
@@ -6120,4 +6136,16 @@ p.heading{
     background-size: cover;
     object-fit: cover;
     /* filter: grayscale(5); */
+}
+
+/* footer links */
+
+@media(min-width:768px){
+.links{
+
+    text-align:left;
+    justify-content: flex-start;
+    margin: auto;
+}
+
 }
