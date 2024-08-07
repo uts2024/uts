@@ -1388,12 +1388,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-window.addEventListener('scroll', function() {
-    const navbarBrand = document.querySelector('.navbar-brand');
+// window.addEventListener('scroll', function() {
+//     const navbarBrand = document.querySelector('.navbar-brand');
     
-    if (window.scrollY > 50) {  // You can adjust the scroll threshold as needed
-        navbarBrand.classList.add('scrolled');
-    } else {
-        navbarBrand.classList.remove('scrolled');
-    }
-});
+//     if (window.scrollY > 50) {  // You can adjust the scroll threshold as needed
+//         navbarBrand.classList.add('scrolled');
+//     } else {
+//         navbarBrand.classList.remove('scrolled');
+//     }
+// });

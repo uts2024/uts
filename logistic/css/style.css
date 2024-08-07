@@ -6149,3 +6149,6 @@ p.heading{
 }
 
 }
+.logo-default,.logo-scrolled{
+    transform: scale(1.5);
+}
