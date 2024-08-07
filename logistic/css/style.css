@@ -5992,9 +5992,7 @@ ul.latest_news li a:focus+span.defaultcolor {
 p.heading{
     padding: 20px;
 }
-#reviews{
-    padding: 19rem 0px 0 0;
-}
+
 
 /* Home */
 .video-section {
@@ -6153,3 +6151,6 @@ p.heading{
     transform: scale(1.5);
 }
 .navbar-bg{background: #323233;}
+#reviews,#our-blog{
+    padding: 22rem 0px 0 0;
+}
